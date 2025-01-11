@@ -18,7 +18,7 @@
    --bg-color-3: #5490f533;
    --bg-color-4: #f7ebcf;
    --color-dark-1: #0e0e0e;
-   --color-dark-2: #0e0e0ecc;
+   --color-dark-2: #0e0e0e26;
 }
 
 body {
@@ -26,7 +26,7 @@ body {
 }
 
 body p {
-   font-size: 16px;
+   font-size: 15px;
    font-weight: 400;
    color: var(--color-dark-1);
    opacity: 70%;
@@ -268,23 +268,46 @@ body p {
    margin-bottom: 24px;
 }
 
-#your-opinion table {
+#your-opinion > .opinions {
    width: 100%;
    padding: 37.44px;
+   border-radius: 16px;
    background-color: #ffffff;
 }
 
-#your-opinion thead {
+#your-opinion table {
    width: 100%;
-   background-color: var(--bg-color-2);
-   display: block;
-   padding: 24px;
+   border-collapse: collapse;
+   border: 1px solid var(--color-dark-2);
 }
 
-.table-hd {
-   width: 100% !important;
-
+#your-opinion th {
+   background-color: var(--bg-color-2);
    text-align: left;
-   display: flex;
-   justify-content: space-between;
+   padding: 24px;
+   font-size: 20px;
+   font-weight: 700;
+}
+
+#your-opinion td {
+   border: 1px solid var(--color-dark-2);
+   text-align: left;
+   padding: 24px;
+   width: 84%;
+   font-size: 16px;
+   font-weight: 600;
+}
+
+#your-opinion .td-2 {
+   text-align: center;
+}
+
+#your-opinion .dropdown {
+   padding: 10px 14px;
+   font-size: 16px;
+   font-weight: 600;
+   text-align: center;
+   background-color: var(--bg-color-2);
+   border: 1px solid var(--color-dark-1);
+   border-radius: 4px;
 }
